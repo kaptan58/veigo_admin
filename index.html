@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEIGO Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚖 VEIGO Admin Panel</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
+      <li><a href="#" onclick="showPage('drivers')">Drivers</a></li>
+      <li><a href="#" onclick="showPage('companies')">Companies</a></li>
+      <li><a href="#" onclick="showPage('users')">Users</a></li>
+      <li><a href="#" onclick="showPage('payments')">Payments</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="dashboard" class="page active">
+      <h2>Dashboard</h2>
+      <div class="stats">
+        <div class="card">Total Drivers: 12</div>
+        <div class="card">Total Users: 145</div>
+        <div class="card">Total Companies: 4</div>
+        <div class="card">Total Earnings: €12,450</div>
+      </div>
+    </section>
+    <section id="drivers" class="page">
+      <h2>Drivers List</h2>
+      <table>
+        <tr><th>Name</th><th>Car</th><th>Status</th></tr>
+        <tr><td>Ali Kaya</td><td>Mercedes Vito</td><td>Active</td></tr>
+        <tr><td>Ahmet Demir</td><td>VW Passat</td><td>Inactive</td></tr>
+      </table>
+    </section>
+    <section id="companies" class="page">
+      <h2>Companies</h2>
+      <ul>
+        <li>Taxi Berlin GmbH</li>
+        <li>Veigo Transport</li>
+      </ul>
+    </section>
+    <section id="users" class="page">
+      <h2>Users</h2>
+      <ul>
+        <li>Mehmet Yılmaz</li>
+        <li>Fatma Kurt</li>
+      </ul>
+    </section>
+    <section id="payments" class="page">
+      <h2>Payments</h2>
+      <ul>
+        <li>€120 - 01/08/2025 - Ali Kaya</li>
+        <li>€85 - 02/08/2025 - Ahmet Demir</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
